@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  
+    <title>Страничка авторизации</title>
+<link rel="stylesheet" href="stile.css">           <!---Путь к CSS-->
+</head>
+
+<body>
+  <article class="container">
+    
+<div class="form">
+ 
+  <h1>🆆🅴🅻🅲🅾🅼🅴</h1>
+
+  
+    <form id="sign-in-form">
+    
+    <div>
+    <input type="email" placeholder="Почта"  />
+    </div>
+    
+
+    <div>
+    <input type="password" name="pass" id="pass" placeholder="Пароль"  pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}" 
+    oninvalid="this.setCustomValidity('Пароль должен быть в длинну не менее 6 символов, содержать буквы верхнего и нижнего регистров, хотя бы одну цифру и спец. символ.')"
+    oninput="this.setCustomValidity('')">
+    </div>           <!------------------------------------------Валидация-->
+     
+
+
+
+    <input type="submit" value="Вход" /></div> 
+    </form>
+
+
+    <meta charset="UTF-8" />
+                                           <!-------------------------Часики-->
+     <script>
+                                                                           
+       window.onload = () => {
+        const clock = document.querySelector("#clock");
+        const updateTimeFn = () => {
+          const currentDate = new Date();
+          clock.value = currentDate;                                             
+        };
+        updateTimeFn();
+        setInterval(updateTimeFn, 1000);
+      };  
+     </script>
+
+                                           <!-----------------Проверка на браузер-->                                           
+<script>
+   function isInternetExplorer() {
+    return window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
+}
+console.log(isInternetExplorer());
+if (isInternetExplorer() === false) {
+                                                                                        
+} else {
+    alert('Ваш браузер - Internet Explorer. Перейдите на нормальный браузер');
+}
+</script>
+
+
+<div>         
+    <input                     
+      type="datetime"                               
+      id="clock"                          
+      disabled="disabled"
+      style="width: 420px;  padding:30x;"                  
+      class="clock"    
+
+      
+    />
+                                                             <!---Еще немного кастомизации часов-->
+  </div>                                 
+</div>
+</article>
+</body>
+</html>

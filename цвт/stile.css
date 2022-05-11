@@ -1,0 +1,97 @@
+body {background: url(https://images.wallpaperscraft.ru/image/single/ulitsa_osveshchenie_podsvetka_134856_1920x1080.jpg) no-repeat center top fixed;
+    background-size: cover; 
+    background-attachment: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}                      /*****************************Расположение фона и сама картинка бэкграунда*/
+
+
+.form {
+    width: 360px;
+       height: 300px;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-55%);
+       background-attachment:fixed;   /*****************************Параметры рамки*/
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       text-align: center;
+       background: rgba(0, 0, 0, 0.7);
+       
+    
+       
+}
+
+
+
+
+
+
+
+::-webkit-input-placeholder {color:#ffffff;}     /*****************************Цвет текста Почта, Пароль*/
+
+input  {
+    background-color: #58585881;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;                             /*****************************Поля Почта и пароль*/
+    margin: 10px;
+    border: 3px solid #fcfcfc;
+
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;                  /*****************************Параметры контейнера с почтой и паролем*/
+    text-align: center;
+}
+
+
+.form h1{
+    color: rgb(37, 184, 241);
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;                         /*****************************Цвет текста заглавия*/
+    margin: 10px;
+    
+    
+
+   
+}
+
+
+
+
+.form input[type="submit"] {
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;                                 /*****************************Параметры кнопки*/
+    text-transform: uppercase;
+    
+    background-color: rgba(2, 2, 2, 0.596);
+    transition: .3s;
+  }
+  
+  
+  .form input[type="submit"]:hover{
+  background-color: rgb(245, 109, 109);                /*****************************Переключение цвета, при наведении на копку*/
+  }
+
+.clock {
+    position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%,-55%);                       /*****************************Позиция и стилизация часов*/
+color: rgb(255, 255, 255);
+border-radius: 15px;
+
+}
+
+
+
