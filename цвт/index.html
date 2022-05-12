@@ -18,15 +18,15 @@
     <form id="sign-in-form">
     
     <div>
-    <input type="email" placeholder="Почта"  />
+    <input type="email" placeholder="Почта" required/>
     </div>
     
 
     <div>
     <input type="password" name="pass" id="pass" placeholder="Пароль"  pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}" 
-    oninvalid="this.setCustomValidity('Пароль должен быть в длинну не менее 6 символов, содержать буквы верхнего и нижнего регистров, хотя бы одну цифру и спец. символ.')"
+    oninvalid="this.setCustomValidity('Пароль должен быть в длинну не менее 6 символов, содержать буквы верхнего и нижнего регистров, хотя бы одну цифру и спец. символ.')" 
     oninput="this.setCustomValidity('')">
-    </div>           <!------------------------------------------Валидация-->
+    required</div>           <!------------------------------------------Валидация-->
      
 
 
